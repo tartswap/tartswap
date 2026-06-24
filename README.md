@@ -12,7 +12,7 @@ Chain ID: 56
 
 | Contract | Address | Purpose |
 |---|---|---|
-| TART Token | [`0xeb2B7d5691878627eff20492cA7c9a71228d931D`](https://bscscan.com/address/0xeb2B7d5691878627eff20492cA7c9a71228d931D) | Main TART ecosystem token |
+| Ecosystem Token | [`0xeb2B7d5691878627eff20492cA7c9a71228d931D`](https://bscscan.com/address/0xeb2B7d5691878627eff20492cA7c9a71228d931D) | Crepe |
 | Fee Router / Swap Router | [`0xBd9Ab53ebfb53F4436c829E881B5e560868D840F`](https://bscscan.com/address/0xBd9Ab53ebfb53F4436c829E881B5e560868D840F) | Swap routing and protocol fee collection |
 | Fee Distributor | [`0xdf0aC48105BbC66EBe2976b03097A87Bb80744c1`](https://bscscan.com/address/0xdf0aC48105BbC66EBe2976b03097A87Bb80744c1) | Protocol fee distribution |
 | Reward Auto Allocator | [`0x7465fF319E6B8Df81ccdE90479D989DA5E7f83Eb`](https://bscscan.com/address/0x7465fF319E6B8Df81ccdE90479D989DA5E7f83Eb) | Reward allocation automation |
