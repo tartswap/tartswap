@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 🔒 Security vulnerability (private disclosure)
+    url: https://github.com/tartswap/tartswap/security/policy
+    about: Report security issues privately per our Security Policy — please do NOT open a public issue for vulnerabilities.
+  - name: 💬 Community & support
+    url: https://t.me/TartSwap
+    about: Questions, help, and general discussion.
+  - name: 🌐 TartSwap website
+    url: https://tartswap.com
+    about: Product, app, and official links.
