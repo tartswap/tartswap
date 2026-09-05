@@ -24,11 +24,15 @@ Source code of the TartSwap protocol contracts, published for public verificatio
 | Contract | Address | Purpose |
 |---|---|---|
 | Protocol Owner Safe (2/3 multisig) | [`0x91772cEc686C619b9a09ecAD4Ed1863d7DE62fBE`](https://bscscan.com/address/0x91772cEc686C619b9a09ecAD4Ed1863d7DE62fBE) | Protocol owner / admin multisig |
-| Ecosystem Token | [`0xeb2B7d5691878627eff20492cA7c9a71228d931D`](https://bscscan.com/address/0xeb2B7d5691878627eff20492cA7c9a71228d931D) | Crepe |
+| Ecosystem Token (TART) | [`0x7AB8d02CBb51Ff7223fDe700eAaa2a91Bf750314`](https://bscscan.com/address/0x7AB8d02CBb51Ff7223fDe700eAaa2a91Bf750314) | TART — protocol token, listed on PancakeSwap 2026-08-31 (`TartToken.sol`) |
+| TART Staking Vault | [`0x038C92ac8269c9A648BA06e434056706Bc7832cE`](https://bscscan.com/address/0x038C92ac8269c9A648BA06e434056706Bc7832cE) | Tiered TART staking vault (`TartStakingVault.sol`) |
+| TART Emission Lockers | [`0x2a9cC2df5F17d8f0553C41d43ea85C823CB0C3d8`](https://bscscan.com/address/0x2a9cC2df5F17d8f0553C41d43ea85C823CB0C3d8) · [`0x1113966aCD804959908a4003626b96497E2f6D01`](https://bscscan.com/address/0x1113966aCD804959908a4003626b96497E2f6D01) | Farm / staking emission lockers, halving schedule, no withdraw (`TartEmissionLocker.sol`) |
+| TART Buyback Burner | [`0x7EFa5c25C1A18b020e1d15725EAd25bDd8B32308`](https://bscscan.com/address/0x7EFa5c25C1A18b020e1d15725EAd25bDd8B32308) | One-way buyback-and-burn (`TartBuybackBurner.sol`) |
+| Legacy Ecosystem Token (CREPE) | [`0xeb2B7d5691878627eff20492cA7c9a71228d931D`](https://bscscan.com/address/0xeb2B7d5691878627eff20492cA7c9a71228d931D) | CREPE — first reward token, still staked in its own vault |
 | Tart Router V2 | [`0xBd9Ab53ebfb53F4436c829E881B5e560868D840F`](https://bscscan.com/address/0xBd9Ab53ebfb53F4436c829E881B5e560868D840F) | Swap routing and protocol fee collection (`TartSwapRouterV2.sol`) |
 | Fee Distributor V2 | [`0xdf0aC48105BbC66EBe2976b03097A87Bb80744c1`](https://bscscan.com/address/0xdf0aC48105BbC66EBe2976b03097A87Bb80744c1) | Protocol fee distribution (`TartFeeDistributor.sol`) |
 | Fee Converter V2 | [`0xDeA32774f6d8d2170192275C23Aec2f3bc1492Bd`](https://bscscan.com/address/0xDeA32774f6d8d2170192275C23Aec2f3bc1492Bd) | Fee conversion contract (`TartFeeConverterV2.sol`) |
-| Tart Staking Vault | [`0x20940d3573F1629F6c5226C2DDa2e9a28b364B33`](https://bscscan.com/address/0x20940d3573F1629F6c5226C2DDa2e9a28b364B33) | Staking vault (`TartStakingVault.sol`) |
+| CREPE Staking Vault | [`0x20940d3573F1629F6c5226C2DDa2e9a28b364B33`](https://bscscan.com/address/0x20940d3573F1629F6c5226C2DDa2e9a28b364B33) | CREPE staking vault (`TartStakingVault.sol`) |
 | LP Farm V3 | [`0x4f6Eb30a521E5F5FDE2BD433cDc805962902F316`](https://bscscan.com/address/0x4f6Eb30a521E5F5FDE2BD433cDc805962902F316) | LP farming contract (`TartLPFarmV3.sol`) |
 | Reward Auto Allocator | [`0x7465fF319E6B8Df81ccdE90479D989DA5E7f83Eb`](https://bscscan.com/address/0x7465fF319E6B8Df81ccdE90479D989DA5E7f83Eb) | Reward allocation automation (`TartRewardAutoAllocator.sol`) |
 | Reward Vault | [`0x1f4Dbc1c8556E5B1200d3cef250c87658AcAb760`](https://bscscan.com/address/0x1f4Dbc1c8556E5B1200d3cef250c87658AcAb760) | Reward custody / vault |
