@@ -94,8 +94,8 @@ Dates are UTC. ✅ shipped · 🔜 in progress / next · 📅 scheduled.
 | 2026-09-23 ✅ | Token tax retired to 0% / 0% and ownership renounced |
 | 2026-09-24 → 10-12 ✅ | Staking re-lock campaign for positions whose lock is ending; 30/90-day tiers weighted 2.5× / 3× |
 | 2026 Q4 🔜 | OTC v2 (market-linked offers) to mainnet · DefiLlama volume/fees/revenue adapters and DEX-aggregator category · first partner staking pool · CEX listings (targets: MEXC, KCEX, XT) and Binance Alpha application · router fees routed into buyback |
-| 2027-02-27 📅 | Treasury lock opens (disclosed in advance; use of funds to be published before that date) |
-| 2027-08-31 📅 | LP lock expiry — renewal decision published before expiry |
+| 2026 Q4 → 2027 Q1 🔜 | CEX listings for TART — tier-2 exchanges first (MEXC, KCEX, XT targets), then broader venues; exchange market-making inventory funded from treasury |
+| 2026 Q4 → 2027 Q1 🔜 | Aggressive marketing campaign: KOL and community programs, trading and staking competitions, Binance Alpha / listing-platform campaigns, paid placements on DexScreener, CoinMarketCap and CoinGecko, weekly on-chain updates on X |
 | 2027 📅 | TART governance beyond the weekly buyback vote; multi-chain evaluation |
 
 ## Transparency notes
