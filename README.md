@@ -21,7 +21,7 @@ sources so they can be read, diffed and audited in one place.
 | Tax | **0% buy / 0% sell** since 23 Sep 2026. The token's fee lanes were reduced to zero and **ownership was renounced** the same day ([tx](https://bscscan.com/tx/0xdc6594c9bb38febb9ce26a8fe850aa79880a3d57a93232aa4fd57dde81001301)); `owner()` is the zero address, so no fee, limit or exemption can ever be changed again. |
 | Burned | 18.0% of supply sits at the dead address (11.21% burned at listing + buyback burns) — [holders](https://bscscan.com/token/0x7AB8d02CBb51Ff7223fDe700eAaa2a91Bf750314#balances) |
 | Supply APIs | circulating https://tartswap.com/api/tart-circulating-supply · total https://tartswap.com/api/tart-total-supply (plain numbers, used by CoinMarketCap / CoinGecko) |
-| Listings | CoinMarketCap (since 1 Sep 2026) · [DefiLlama](https://defillama.com/protocol/tartswap) (TVL + staking; volume/fees adapters in review) |
+| Listings | [CoinGecko](https://www.coingecko.com/en/coins/tartswap) (id `tartswap`, since 25 Sep 2026) · CoinMarketCap (since 1 Sep 2026) · [DefiLlama](https://defillama.com/protocol/tartswap) (TVL, staking, volume and fees) |
 
 ### Tokenomics
 
