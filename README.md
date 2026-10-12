@@ -1,8 +1,8 @@
 # TartSwap — protocol contracts on BNB Chain
 
 Source code of the TartSwap protocol contracts, published for public verification: the **TART** token and its
-launch stack, the DEX (swap router, fee split, staking vaults, LP farms), the OTC desk and
-governance. Every mainnet contract below is source-verified on BscScan; this repository mirrors the verified
+launch stack, the DEX (swap router, fee split, staking vaults, LP farms) and the OTC desk.
+Every mainnet contract below is source-verified on BscScan; this repository mirrors the verified
 sources so they can be read, diffed and audited in one place.
 
 - Website: https://tartswap.com · Token page: https://tartswap.com/token
@@ -88,7 +88,6 @@ Dates are UTC. ✅ shipped · 🔜 in progress / next · 📅 scheduled.
 | When | Milestone |
 |---|---|
 | 2026 Q2 ✅ | Protocol on BNB Chain mainnet: swap router with on-chain fee split, staking vaults, LP farms, reward auto-allocator, escrowed OTC desk |
-| 2026 Q3 ✅ | Weekly buyback vote (on-chain governance) |
 | 2026-08-29 → 31 ✅ | TART whitelist presale, listing on PancakeSwap, LP lock at FlokiFi, 1.12B launch burn — executed in one session after two full mainnet rehearsals |
 | 2026-09 ✅ | CoinMarketCap (1 Sep) and DefiLlama (3 Sep) listings; vested community airdrop to 1,335 CREPE wallets; emission lockers streaming |
 | 2026-09-23 ✅ | Token tax retired to 0% / 0% and ownership renounced |
@@ -96,7 +95,7 @@ Dates are UTC. ✅ shipped · 🔜 in progress / next · 📅 scheduled.
 | 2026 Q4 🔜 | OTC v2 (market-linked offers) to mainnet · DefiLlama volume/fees/revenue adapters and DEX-aggregator category · first partner staking pool · CEX listings (targets: MEXC, KCEX, XT) and Binance Alpha application · router fees routed into buyback |
 | 2026 Q4 → 2027 Q1 🔜 | CEX listings for TART — tier-2 exchanges first (MEXC, KCEX, XT targets), then broader venues; exchange market-making inventory funded from treasury |
 | 2026 Q4 → 2027 Q1 🔜 | Aggressive marketing campaign: KOL and community programs, trading and staking competitions, Binance Alpha / listing-platform campaigns, paid placements on DexScreener, CoinMarketCap and CoinGecko, weekly on-chain updates on X |
-| 2027 📅 | TART governance beyond the weekly buyback vote; multi-chain evaluation |
+| 2027 📅 | TART governance; multi-chain evaluation |
 
 ## Transparency notes
 
@@ -112,7 +111,6 @@ Dates are UTC. ✅ shipped · 🔜 in progress / next · 📅 scheduled.
 | `contracts/otc/` | OTC desk v1 (fixed price) and v2 (market-linked) |
 | `contracts/dex/` | DEX core: swap router, fee distributor, fee converter, staking vault, partner staking vault, LP farm, reward auto allocator |
 | `contracts/dex/tartswap-v2/` | TartSwap V2 AMM: factory, pair, router, LP ERC20, interfaces and libraries |
-| `contracts/governance/` | Weekly buyback vote, stake adapter, buyback distributor |
 | `contracts/interfaces/` | Shared interfaces |
 
 ## DEX contracts — BNB Smart Chain mainnet (chain id 56)
@@ -135,13 +133,6 @@ Dates are UTC. ✅ shipped · 🔜 in progress / next · 📅 scheduled.
 | Fee Collector | [`0xfa261c02b023b8a01F4Fc25Cca658757ddA48521`](https://bscscan.com/address/0xfa261c02b023b8a01F4Fc25Cca658757ddA48521) | Protocol fee receiver |
 | Token Registry | [`0xE216adfA6C8eCD094f17dF9cdf3ce0b476925538`](https://bscscan.com/address/0xE216adfA6C8eCD094f17dF9cdf3ce0b476925538) | Token registry |
 | Farm Registry | [`0x7c125816207AECfa2011eA28c71A6B2BB0D43f23`](https://bscscan.com/address/0x7c125816207AECfa2011eA28c71A6B2BB0D43f23) | Farm registry |
-
-## Governance — BNB Smart Chain testnet (chain id 97)
-
-| Contract | Address | Purpose |
-|---|---|---|
-| WeeklyBuybackVote | [`0xb2281B548C7f40b7A2EeDd34f171293B6Da11706`](https://testnet.bscscan.com/address/0xb2281B548C7f40b7A2EeDd34f171293B6Da11706) | Weekly buyback governance vote (`WeeklyBuybackVote.sol`) |
-| BuybackDistributor | [`0xC9c25196c24653D30b5432fcb84F1b72D38adecd`](https://testnet.bscscan.com/address/0xC9c25196c24653D30b5432fcb84F1b72D38adecd) | Buyback execution and distribution (`BuybackDistributor.sol`) |
 
 ## External / utility contracts (mainnet)
 
