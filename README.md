@@ -1,7 +1,7 @@
 # TartSwap — protocol contracts on BNB Chain
 
 Source code of the TartSwap protocol contracts, published for public verification: the **TART** token and its
-launch stack, the DEX (swap router, fee split, staking vaults, LP farms), the OTC desk, the games engine and
+launch stack, the DEX (swap router, fee split, staking vaults, LP farms), the OTC desk and
 governance. Every mainnet contract below is source-verified on BscScan; this repository mirrors the verified
 sources so they can be read, diffed and audited in one place.
 
@@ -43,7 +43,7 @@ Unlock path of the total supply (cumulative, % of 10B): listing 32.3% · month 3
 year 1 55.0% · year 2 60.6% · year 3 62.0%. The 11.21% launch burn never circulates.
 
 Fee model: the token itself charges nothing. Protocol revenue comes from the swap router (0.35% on routed
-swaps, split by `TartFeeDistributor`), the staking vault's tiered deposit/early-exit fees, OTC and game fees.
+swaps, split by `TartFeeDistributor`), the staking vault's tiered deposit/early-exit fees and OTC fees.
 Emissions are paced by `TartEmissionPacer` against real staked capital, so the reward rate can only fall,
 never inflate beyond the lockers' halving curve.
 
@@ -88,7 +88,7 @@ Dates are UTC. ✅ shipped · 🔜 in progress / next · 📅 scheduled.
 | When | Milestone |
 |---|---|
 | 2026 Q2 ✅ | Protocol on BNB Chain mainnet: swap router with on-chain fee split, staking vaults, LP farms, reward auto-allocator, escrowed OTC desk |
-| 2026 Q3 ✅ | Fast Games parimutuel engine (rounds settled by keeper, winners split the pool) and the weekly buyback vote |
+| 2026 Q3 ✅ | Weekly buyback vote (on-chain governance) |
 | 2026-08-29 → 31 ✅ | TART whitelist presale, listing on PancakeSwap, LP lock at FlokiFi, 1.12B launch burn — executed in one session after two full mainnet rehearsals |
 | 2026-09 ✅ | CoinMarketCap (1 Sep) and DefiLlama (3 Sep) listings; vested community airdrop to 1,335 CREPE wallets; emission lockers streaming |
 | 2026-09-23 ✅ | Token tax retired to 0% / 0% and ownership renounced |
@@ -112,7 +112,6 @@ Dates are UTC. ✅ shipped · 🔜 in progress / next · 📅 scheduled.
 | `contracts/otc/` | OTC desk v1 (fixed price) and v2 (market-linked) |
 | `contracts/dex/` | DEX core: swap router, fee distributor, fee converter, staking vault, partner staking vault, LP farm, reward auto allocator |
 | `contracts/dex/tartswap-v2/` | TartSwap V2 AMM: factory, pair, router, LP ERC20, interfaces and libraries |
-| `contracts/games/` | Fast Games: parimutuel round arena, game fee splitter, testnet pUSDT faucet |
 | `contracts/governance/` | Weekly buyback vote, stake adapter, buyback distributor |
 | `contracts/interfaces/` | Shared interfaces |
 
@@ -137,16 +136,12 @@ Dates are UTC. ✅ shipped · 🔜 in progress / next · 📅 scheduled.
 | Token Registry | [`0xE216adfA6C8eCD094f17dF9cdf3ce0b476925538`](https://bscscan.com/address/0xE216adfA6C8eCD094f17dF9cdf3ce0b476925538) | Token registry |
 | Farm Registry | [`0x7c125816207AECfa2011eA28c71A6B2BB0D43f23`](https://bscscan.com/address/0x7c125816207AECfa2011eA28c71A6B2BB0D43f23) | Farm registry |
 
-## Games & governance — BNB Smart Chain testnet (chain id 97)
+## Governance — BNB Smart Chain testnet (chain id 97)
 
 | Contract | Address | Purpose |
 |---|---|---|
-| FastRoundArena | [`0x46ae0d1eE576dfC2679F24eb2c70abC21a7C98f9`](https://testnet.bscscan.com/address/0x46ae0d1eE576dfC2679F24eb2c70abC21a7C98f9) | Parimutuel fast-round games (`FastRoundArena.sol`) |
-| Game Fee Splitter | [`0x22D710dc241958727140ec336136930132f3BC40`](https://testnet.bscscan.com/address/0x22D710dc241958727140ec336136930132f3BC40) | Arena fee sink: treasury / buyback split (`GameFeeSplitter.sol`) |
 | WeeklyBuybackVote | [`0xb2281B548C7f40b7A2EeDd34f171293B6Da11706`](https://testnet.bscscan.com/address/0xb2281B548C7f40b7A2EeDd34f171293B6Da11706) | Weekly buyback governance vote (`WeeklyBuybackVote.sol`) |
 | BuybackDistributor | [`0xC9c25196c24653D30b5432fcb84F1b72D38adecd`](https://testnet.bscscan.com/address/0xC9c25196c24653D30b5432fcb84F1b72D38adecd) | Buyback execution and distribution (`BuybackDistributor.sol`) |
-| Test USDT (pUSDT) | [`0xc69F045446e96D0a275b72486eEA773d087532d4`](https://testnet.bscscan.com/address/0xc69F045446e96D0a275b72486eEA773d087532d4) | Testnet collateral token |
-| pUSDT Faucet | [`0xbD0D20A344D1e66d5e1107AE050a78e7D07569bE`](https://testnet.bscscan.com/address/0xbD0D20A344D1e66d5e1107AE050a78e7D07569bE) | Testnet token faucet (`PredictionTestUSDTFaucet.sol`) |
 
 ## External / utility contracts (mainnet)
 
